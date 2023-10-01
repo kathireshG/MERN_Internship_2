@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <style>
+      label {
+        display: inline-block;
+        margin: 8px;
+        font-weight: bold;
+        padding-right: 25px;
+        font-size: 18px;
+        text-align: right;
+        width: 200px;
+      }
+      button {
+        font-size: 17px;
+        margin: 8px;
+      }
+      form {
+        margin: 50px;
+        background-color: #e9e9e9;
+        padding: 20px;
+        width: 600px;
+        text-align: center;
+      }
+      input {
+        font-size: 15px;
+        padding: 5px;
+        height: 40px;
+        width: 350px;
+        border: 1px solid grey;
+      }
+      #selection_ {
+        font-size: 15px;
+        padding: 5px;
+        height: 40px;
+        width: 200px;
+        border: 1px solid grey;
+      }
+
+      .input-group-text {
+        width: 40px;
+        height: 40px;
+        border: 1px solid grey;
+        border-radius: 0px;
+      }
+
+      .field-body {
+        margin-bottom: 20px;
+      }
+      textarea {
+        width: 200px;
+        height: 100px;
+      }
+      button {
+        width: 80px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="needs-validation" novalidate>
+      <div style="display: flex" class="field-body">
+        <label for="firstName">First Name</label>
+        <div class="input-group">
+          <span class="input-group-text"
+            ><i class="bi bi-person-fill"></i
+          ></span>
+          <input type="text" placeholder="First Name" id="firstName" required />
+          <div class="invalid-feedback">Please supply your first name</div>
+        </div>
+      </div>
+
+      <div style="display: flex" class="field-body">
+        <label for="lastName">Last Name</label>
+        <div class="input-group">
+          <span class="input-group-text"
+            ><i class="bi bi-person-fill"></i
+          ></span>
+          <input type="text" placeholder="Last Name" id="lastName" required />
+          <div class="invalid-feedback">Please supply your last name</div>
+        </div>
+      </div>
+
+      <div style="display: flex" class="field-body">
+        <label for="email">E-mail</label>
+        <div class="input-group">
+          <span class="input-group-text"
+            ><i class="bi bi-envelope-open-fill"></i
+          ></span>
+          <input
+            type="email"
+            placeholder="E-mail Address"
+            id="email"
+            required
+          />
+          <div class="invalid-feedback">Please supply your email address</div>
+        </div>
+      </div>
+
+      <div style="display: flex" class="field-body">
+        <label for="phone">Phone#</label>
+        <div class="input-group">
+          <span class="input-group-text"
+            ><i class="bi bi-telephone-fill"></i
+          ></span>
+          <input
+            type="number"
+            placeholder="(845)555-1212"
+            id="phone"
+            required
+          />
+          <div class="invalid-feedback">Please supply your phone number</div>
+        </div>
+      </div>
+
+      <div style="display: flex" class="field-body">
+        <label for="address">Address</label>
+        <div class="input-group">
+          <span class="input-group-text"
+            ><i class="bi bi-house-door-fill"></i
+          ></span>
+          <input type="text" placeholder="Address" id="address" required />
+          <div class="invalid-feedback">Please supply your street address</div>
+        </div>
+      </div>
+
+      <div style="display: flex" class="field-body">
+        <label for="city" class="form-label">City</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text"
+            ><i class="bi bi-house-door-fill"></i
+          ></span>
+          <input type="text" placeholder="City" id="city" required />
+          <div class="invalid-feedback">Please provide a valid city</div>
+        </div>
+      </div>
+
+      <div style="display: flex" class="field-body">
+        <label for="phone">State</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-list-ul"></i></span>
+          <select class="form-select" id="selection_" required></select>
+          <div class="invalid-feedback">Please provide a state</div>
+        </div>
+      </div>
+
+      <div style="display: flex" class="field-body">
+        <label for="phone" style="width: 350px">Do you have hosting</label>
+        <div class="input-group">
+          <div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label
+                class="form-check-label"
+                for="flexRadioDefault1"
+                style="width: 10px; margin: 1px"
+              >
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+              />
+              <label
+                class="form-check-label"
+                for="flexRadioDefault2"
+                style="width: 10px; margin: 1px"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex" class="field-body">
+        <label for="phone" style="width: 350px">Project Description</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+          <textarea
+            id="selection_"
+            placeholder="Project Description"
+            style="width: 200px"
+          ></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-warning text-light">Send</button>
+    </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (() => {
+        "use strict";
+
+        const forms = document.querySelectorAll(".needs-validation");
+
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
