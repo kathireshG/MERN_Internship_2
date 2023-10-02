@@ -1,0 +1,38 @@
+label {
+  display: inline-block;
+  font-size: 18px;
+  width: 100px;
+  text-align: right;
+  vertical-align: top;
+}
+label,
+input {
+  margin: 5px;
+}
+button {
+  margin-top: 10px;
+  margin-left: 120px;
+}
+textarea {
+  height: 80px;
+  margin: 10px;
+  width: 180px;
+}
+
+.input-group {
+  display: flex;
+}
+.input-group .error-message {
+  color: red;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.input-group.error-message input {
+  border: 3px solid red;
+}
+
+.input-group.error-message textarea {
+  border: 3px solid red;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 7</title>
+    <style>
+      body {
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        margin: 70px auto;
+      }
+
+      button {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 17px;
+        margin-top: 10px;
+      }
+
+      h1 {
+        color: #09008e;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="train.gif" alt="" id="animatedGif" />
+    <h1>Click the following buttons to handle animation</h1>
+    <br />
+
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+
+    <script>
+      const animatedGif = document.getElementById("animatedGif");
+      const startButton = document.getElementById("startButton");
+      const stopButton = document.getElementById("stopButton");
+      let isAnimating = true;
+
+      startButton.addEventListener("click", () => {
+        if (!isAnimating) {
+          animatedGif.src = "train.gif";
+          isAnimating = true;
+        }
+      });
+
+      stopButton.addEventListener("click", () => {
+        if (isAnimating) {
+          animatedGif.src = "train.jpg";
+          isAnimating = false;
+        }
+      });
+    </script>
+  </body>
+</html>
