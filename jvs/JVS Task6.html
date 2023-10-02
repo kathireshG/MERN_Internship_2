@@ -12,19 +12,20 @@
   </head>
   <body>
     <div class="outer">
-      <form action="">
+      <form action="" id="form" novalidate>
         <h1>Instagram</h1>
         <div class="input_">
           <i class="fa fa-user" aria-hidden="true"></i>
-          <input type="text" placeholder="Username" required />
+          <input type="text" placeholder="Username" id="user" required />
         </div>
         <br />
         <div class="input_">
           <i class="fa fa-lock" aria-hidden="true"></i>
 
-          <input type="Password" placeholder="Password" required />
+          <input type="Password" placeholder="Password" id="pass" required />
         </div>
         <br />
+        <p id="error_" hidden>text</p>
         <button type="submit">Log In</button>
         <br />
         <div class="inner">
@@ -37,5 +38,6 @@
         Don't have an account? <span> <a href=""> Sign up here</a></span>
       </p>
     </div>
+    <script src="JVS Task6.js"></script>
   </body>
 </html>
