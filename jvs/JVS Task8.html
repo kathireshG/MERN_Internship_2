@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 8</title>
+    <link rel="stylesheet" href="JVS Task8.css" />
+  </head>
+  <body>
+    <div class="outer_">
+      <h1>Registration Form</h1>
+      <table>
+        <tr>
+          <th for="First Name">First Name</th>
+          <td><input type="text" id="First_Name" required /></td>
+          <td id="td_"><div class="error" id="errorName"></div></td>
+        </tr>
+        <br />
+        <tr>
+          <th for="Last Name">Last Name</th>
+          <td><input type="text" id="Last_Name" /></td>
+          <td id="td_"><div class="error" id="error_last_name"></div></td>
+        </tr>
+        <tr>
+          <th for="Email">Email</th>
+          <td><input type="email" id="Email" /></td>
+          <td id="td_"><div class="error" id="errorEmail"></div></td>
+        </tr>
+        <tr>
+          <th for="Password">Password</th>
+          <td><input type="password" id="Password" /></td>
+          <td id="td_"><div class="error" id="errorPassword"></div></td>
+        </tr>
+        <tr>
+          <th for="Re-enter Password">Re-enter Password</th>
+          <td><input type="password" id="reenter_" /></td>
+          <td id="td_">
+            <div class="error" id="errorrePassword"></div>
+          </td>
+        </tr>
+        <tr>
+          <th for="Gender">Gender</th>
+          <td>
+            <table style="border: none">
+              <tr style="border: none">
+                <td style="border: none">
+                  <input
+                    type="radio"
+                    id="Male"
+                    name="gender"
+                    style="width: fit-content"
+                  />
+                  <label for="Male">Male</label>
+                </td>
+              </tr>
+              <tr
+                style="
+                  border-bottom: none;
+                  border-left: none;
+                  border-right: none;
+                "
+              >
+                <td style="border: none">
+                  <input
+                    type="radio"
+                    id="Female"
+                    name="gender"
+                    style="width: fit-content"
+                  />
+                  <label for="Female">Female</label>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <th for="Age">Age</th>
+          <td><input type="number" id="Age" /></td>
+          <td id="td_"><div class="error" id="errorAge"></div></td>
+        </tr>
+        <tr>
+          <th for="Phone Number">Phone Number</th>
+          <td><input type="number" id="PhoneNumber" /></td>
+          <td id="td_"><div class="error" id="errorPhone"></div></td>
+        </tr>
+        <tr>
+          <th for="Address">Address</th>
+          <td><input style="height: 68px" type="text" id="Address" /></td>
+          <td id="td_"><div class="error" id="errorAddress"></div></td>
+        </tr>
+        <tr>
+          <th for="State">State</th>
+          <td><input type="text" id="State" /></td>
+          <td id="td_"><div class="error" id="errorState"></div></td>
+        </tr>
+        <tr>
+          <th for="Country">Country</th>
+          <td>
+            <select name="Country" id="Country">
+              <option>Choose your country</option>
+              <option value="India">India</option>
+              <option value="China">China</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Russia">Russia</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th for="Languages Known">Languages Known</th>
+          <td>
+            <input style="width: fit-content" type="checkbox" id="English" />
+            <label for="English">English</label>
+            <input style="width: fit-content" type="checkbox" id="Kannada" />
+            <label for="Kannada">Kannada</label>
+            <input style="width: fit-content" type="checkbox" id="Hindi" />
+            <label for="Hindi">Hindi</label>
+            <input style="width: fit-content" type="checkbox" id="Telugu" />
+            <label for="Telugu">Telugu</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="width: fit-content">
+            <input style="width: fit-content" type="checkbox" id="final" />
+            <label for="final"
+              >Hereby I declare all given details are true</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div style="text-align: right">
+              <p style="text-align: right; display: inline-block; margin: 2px">
+                Log in to
+              </p>
+              <a href="">Ethnus Website</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <button id="submit__" type="submit">Register</button>
+    </div>
+    <script src="JVS Task8.js"></script>
+  </body>
+</html>
